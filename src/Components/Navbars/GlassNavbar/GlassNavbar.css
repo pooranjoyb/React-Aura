@@ -1,7 +1,55 @@
 .glass {
-    background: rgba(250, 246, 246, 0.603);
-    box-shadow: 0 2px 15px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(10.5px);
-    -webkit-backdrop-filter: blur(12.5px);
-    border: 1px solid rgba(255, 255, 255, 0.718);
-  }
+  background: transparent;
+  background: linear-gradient(
+    63deg,
+    rgba(255, 255, 255, 1) 21%,
+    rgba(0, 90, 167, 1) 47%,
+    rgba(61, 129, 181, 1) 62%,
+    rgba(248, 250, 224, 1) 87%
+  );
+  box-shadow: 0 2px 15px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border: 1px solid rgba(255, 255, 255, 0.718);
+  color: white;
+  justify-content: space-around;
+}
+body {
+  background: #005aa7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #fffde4,
+    #005aa7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #fffde4,
+    #005aa7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.glass-foot,
+.home {
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: 0px 10%;
+  position: sticky;
+  height: 30vh;
+  color: white;
+  background: transparent;
+  background: linear-gradient(
+    63deg,
+    rgba(255, 255, 255, 1) 21%,
+    rgba(0, 90, 167, 1) 47%,
+    rgba(61, 129, 181, 1) 62%,
+    rgba(248, 250, 224, 1) 87%
+  );
+  box-shadow: 0 2px 15px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 40px;
+}
+.glass-foot h1 {
+  font-size: 20px;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
