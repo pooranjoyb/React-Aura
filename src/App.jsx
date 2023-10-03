@@ -1,4 +1,4 @@
-// import React from "react"
+import React from "react"
 import DialogShowcase from "./Components/DialogShowcase";
 import GlassNavbar from "./Components/Navbars/GlassNavbar/GlassNavbar";
 import Footer from "./Components/footer/Footer";
