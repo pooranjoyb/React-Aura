@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import './CodeBox.css'; // You can create a separate CSS file for styling
+import Toast from '../Toastify/Toast';
 
 const CodeBox = () => {
     const [code, setCode] = useState(`
@@ -79,27 +80,36 @@ const CodeBox = () => {
           </Row>
         </Container>
       </Box>
-  
-  
-  
-  
-  
     );
   };
   export default Footer;`);
 
-  const handleCopy = () => {
-    alert('Code has been copied to clipboard!');
-  };
+  const [showToast, setShowToast] = useState(false);
 
+  const handleCopy = () => {
+    setShowToast(true);
+  };
   return (
-    <div className="code-box">
-         <h1>JSX Code for Footer</h1>
-      <pre>{code}</pre>
+    <div className="w-full md:w-1/2 p-4 mx-auto">
+    <div className="bg-white shadow-md rounded px-4 py-4">
+      <h1 className="text-lg font-bold mb-4 flex ml-2">
+        <img src="https://api.iconify.design/ph:terminal-window.svg?color=%231c1c1c" alt="code" className='w-5 h-5 mt-1 mr-2' />
+        JSX Code for Footer</h1>
+      <pre className="text-sm text-black whitespace-pre-wrap overflow-x-auto border rounded-lg p-2 ">
+        {code}
+      </pre>
       <CopyToClipboard text={code} onCopy={handleCopy}>
-        <button>Copy Code</button>
+        <button className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none">
+          Copy Code
+        </button>
       </CopyToClipboard>
+      {showToast && (
+        <Toast status="success" >
+          Code has been copied to clipboard!
+        </Toast>
+      )}
     </div>
+  </div>
   );
 };
 

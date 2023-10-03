@@ -7,11 +7,10 @@ function App() {
 
   return (
     <>
-      <Home/>
       <GlassNavbar/>
-      <Footer />
       <CodeBox/>
       <CssCopy/>
+      <Footer />
     </>
   )
 }
