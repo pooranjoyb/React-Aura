@@ -5,10 +5,13 @@ export function Dialog({ children }) {
     return <>{children}</>;
 }
 
-export function DialogTrigger({ children, type }) {
+export function DialogTrigger({ children, type, ...restProps }) {
     const { pathname } = useLocation();
     return (
-        <Link to={`${pathname}?open-dialog=true&dialog-type=${type}`}>
+        <Link
+            to={`${pathname}?open-dialog=true&dialog-type=${type}`}
+            {...restProps}
+        >
             {children}
         </Link>
     );

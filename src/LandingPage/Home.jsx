@@ -10,7 +10,6 @@ import Toast from "../Components/Toastify/Toast";
 import ProgressBar from "../Components/ProgressBar/ProgressBar";
 import Pagination from "../Components/Pagination/Pagination";
 import { Link } from "react-router-dom";
-import DialogShowcase from "../Components/DialogShowcase";
 
 const Home = () => {
     const [modalState, setModalState] = useState(false);
@@ -40,7 +39,6 @@ const Home = () => {
                         <button className="px-4 text-lg py-[10px] text-gray-700 hover:bg-slate-200 border border-zinc-900 rounded-lg duration-100 hover:border-zinc-700 active:shadow-lg">
                             Explore
                         </button>
-                        <DialogShowcase />
                     </div>
                 </div>
                 <div className="w-1/2 pt-12 pb-8 px-14 flex gap-y-3">
