@@ -1,16 +1,21 @@
 // import React from "react"
 import GlassNavbar from "./Components/Navbars/GlassNavbar/GlassNavbar"
-import CodeBox from "./Components/footer/JsxCopy"
-import Footer from "./Components/footer/Footer"
-import CssCopy from "./Components/footer/CssCopy"
+import Sidebar from "./Components/Sidebar"
+
+
 function App() {
 
   return (
     <>
       <GlassNavbar/>
+<<<<<<< HEAD
       <CodeBox/>
       <CssCopy/>
       <Footer />
+=======
+      <Sidebar />
+
+>>>>>>> ae58aa049ba19c6be3e194bc6435835b08ff31d7
     </>
   )
 }

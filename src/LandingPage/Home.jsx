@@ -9,6 +9,8 @@ import ToggleButton from "../Components/Buttons/ToggleButton/ToggleButton";
 import Toast from "../Components/Toastify/Toast";
 import ProgressBar from "../Components/ProgressBar/ProgressBar";
 import Pagination from "../Components/Pagination/Pagination";
+import { Link } from "react-router-dom"
+
 const Home = () => {
   const [modalState, setModalState] = useState(false);
   return (
@@ -26,9 +28,10 @@ const Home = () => {
             </div>
           </div>
           <div className="flex mt-5 gap-x-4 w-full">
-            <button className="px-4 text-lg py-[10px] text-white bg-zinc-800 rounded-lg duration-150 hover:bg-zinc-700 active:shadow-lg">
+            <Link to='/components'><button className="px-4 text-lg py-[10px] text-white bg-zinc-800 rounded-lg duration-150 hover:bg-zinc-700 active:shadow-lg">
               Browse Components
             </button>
+            </Link>
             <button className="px-4 text-lg py-[10px] text-gray-700 hover:bg-slate-200 border border-zinc-900 rounded-lg duration-100 hover:border-zinc-700 active:shadow-lg">
               Explore
             </button>

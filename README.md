@@ -74,7 +74,7 @@ This project is licensed under the **[MIT License](LICENSE)**
 ## Our Valuable Contributors of `Hacktoberfest 2023`
 
 <div align="center">
-<a href="https://github.com/pooranjoyb/Hacktoberfest2023/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=pooranjoyb/Hacktoberfest2023" />
+<a href="https://github.com/pooranjoyb/React-Aura/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=pooranjoyb/React-Aura" />
 </a>
 </div>
