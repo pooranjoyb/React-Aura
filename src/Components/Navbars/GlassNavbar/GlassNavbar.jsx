@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useScroll, useMotionValueEvent } from "framer-motion";
 import "./GlassNavbar.css";
-
+import Footer from "../../Footerbars/Footer";
+import Home from "../../HomeBar/Home";
+import Service from "../../ServiceBar/Service";
 export default function Navbar() {
   const [hidden, setHidden] = useState(false);
   const { scrollY } = useScroll();
@@ -31,7 +33,9 @@ export default function Navbar() {
               <li className="mx-3 cursor-pointer">Home</li>
             </a>
             <li className="mx-3 cursor-pointer">About</li>
-            <li className="mx-3 cursor-pointer">Services</li>
+            <a href="#service">
+              <li className="mx-3 cursor-pointer">Services</li>
+            </a>
             <a href="#contact">
               <li className="mx-3 cursor-pointer">Contact</li>
             </a>
@@ -39,32 +43,11 @@ export default function Navbar() {
         </div>
       </motion.div>
       <div style={{ height: "100vh" }}></div>
-      <motion.div
-        transition={{ duration: 0.6 }}
-        animate={hidden ? "hidden" : "visible"}
-      >
-        <div className="home" id="home">
-          HOME PAGE
-        </div>
-      </motion.div>
+      <Home />
       <div style={{ height: "100vh" }}></div>
-      <motion.div
-        transition={{ duration: 0.6 }}
-        animate={hidden ? "hidden" : "visible"}
-        variants={{
-          visible: { y: 100 },
-          hidden: { y: -100 },
-        }}
-      >
-        <footer id="contact" className="glass-foot">
-          <h1>Contact</h1>
-          <h3>Our Services</h3>
-          <h3>About</h3>
-          <h3>Email</h3>
-          <h3>Phone</h3>
-          <h3>Login Portal</h3>
-        </footer>
-      </motion.div>
+      <Service />
+      <div style={{ height: "100vh" }}></div>
+      <Footer />
     </>
   );
 }
