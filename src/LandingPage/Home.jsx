@@ -15,7 +15,6 @@ const Home = () => {
   const [modalState, setModalState] = useState(false);
   return (
     <div>
-      <GlassNavbar />
       <Modal state={modalState} setState={setModalState} />
       <div className="landingPage min-h-[650px] flex mt-5  sm:flex-row flex-col px-20 py-10">
         <div className="w-1/2 px-10 flex flex-col gap-y-3 min-h-[500px] justify-center">
