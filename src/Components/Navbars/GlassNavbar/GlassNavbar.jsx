@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import { Link } from "react-router-dom";
 import { useScroll, useMotionValueEvent } from 'framer-motion'
 import "./GlassNavbar.css"
 
@@ -28,10 +29,10 @@ export default function Navbar() {
       >
         <div className="glass flex items-center justify-center border-2 p-4 border-black w-3/4 rounded-full">
           <ul className='flex justify-center'>
-            <li className='mx-3 cursor-pointer'>Home</li>
-            <li className='mx-3 cursor-pointer'>About</li>
-            <li className='mx-3 cursor-pointer'>Services</li>
-            <li className='mx-3 cursor-pointer'>Contact</li>
+            <li className='mx-3 cursor-pointer'> <Link to='/home'> Home</Link></li>
+            <li className='mx-3 cursor-pointer'><Link to='/about'> About</Link></li>
+            <li className='mx-3 cursor-pointer'><Link to='/services'> Services</Link></li>
+            <li className='mx-3 cursor-pointer'><Link to='/contact'> Contact</Link></li>
           </ul>
         </div>
       </motion.div>
