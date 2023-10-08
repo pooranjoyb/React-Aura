@@ -47,37 +47,37 @@ const Sidebar = () => {
              </a>
            </li>
            <li>
-             <a href="#" className="block hover-bg-blue-200 rounded p-2">
+             <a href="#" className="block hover:bg-blue-200 rounded p-2">
                <FontAwesomeIcon icon={faCaretRight} className="mr-2" />
                Inputs
              </a>
            </li>
            <li>
-             <a href="#" className="block hover-bg-blue-200 rounded p-2">
+             <a href="#" className="block hover:bg-blue-200 rounded p-2">
                <FontAwesomeIcon icon={faCaretRight} className="mr-2" />
                Modals
              </a>
            </li>
            <li>
-             <a href="#" className="block hover-bg-blue-200 rounded p-2">
+             <a href="#" className="block hover:bg-blue-200 rounded p-2">
                <FontAwesomeIcon icon={faCaretRight} className="mr-2" />
                Navbars
              </a>
            </li>
            <li>
-             <a href="#" className="block hover-bg-blue-200 rounded p-2">
+             <a href="#" className="block hover:bg-blue-200 rounded p-2">
                <FontAwesomeIcon icon={faCaretRight} className="mr-2" />
                Pagination
              </a>
            </li>
            <li>
-             <a href="#" className="block hover-bg-blue-200 rounded p-2">
+             <a href="#" className="block hover:bg-blue-200 rounded p-2">
                <FontAwesomeIcon icon={faCaretRight} className="mr-2" />
                ProgressBar
              </a>
            </li>
            <li>
-             <a href="#" className="block hover-bg-blue-200 rounded p-2">
+             <a href="#" className="block hover:bg-blue-200 rounded p-2">
                <FontAwesomeIcon icon={faCaretRight} className="mr-2" />
                Toastify
              </a>
