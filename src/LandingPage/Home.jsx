@@ -9,7 +9,8 @@ import ToggleButton from "../Components/Buttons/ToggleButton/ToggleButton";
 import Toast from "../Components/Toastify/Toast";
 import ProgressBar from "../Components/ProgressBar/ProgressBar";
 import Pagination from "../Components/Pagination/Pagination";
-import { Link } from "react-router-dom"
+import BreadcrumbWithIcon from "../Components/Breadcrumb/BreadcrumbWithIcon";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [modalState, setModalState] = useState(false);
@@ -23,19 +24,21 @@ const Home = () => {
           </div>
           <div className="text-xl">
             <div className="w-3/4 ">
-            Build your website faster than ever before. Utilize our beautifully designed and expertly crafted components. The perfect starting point for your next project.
+              Build your website faster than ever before. Utilize our
+              beautifully designed and expertly crafted components. The perfect
+              starting point for your next project.
             </div>
           </div>
           <div className="flex mt-5 gap-x-4 w-full">
-            <Link to='/components'><button className="px-4 text-lg py-[10px] text-white bg-zinc-800 rounded-lg duration-150 hover:bg-zinc-700 active:shadow-lg">
-              Browse Components
-            </button>
+            <Link to="/components">
+              <button className="px-4 text-lg py-[10px] text-white bg-zinc-800 rounded-lg duration-150 hover:bg-zinc-700 active:shadow-lg">
+                Browse Components
+              </button>
             </Link>
             <button className="px-4 text-lg py-[10px] text-gray-700 hover:bg-slate-200 border border-zinc-900 rounded-lg duration-100 hover:border-zinc-700 active:shadow-lg">
               Explore
             </button>
           </div>
-          
         </div>
         <div className="w-1/2 pt-12 pb-8 px-14 flex gap-y-3">
           <div className="flex-col w-full gap-4 flex-wrap">
@@ -51,18 +54,25 @@ const Home = () => {
               <Toast status="default">Default Toastify</Toast>
               <Toast status="success">Item moved successfully.</Toast>
               <Toast status="warning">Improve password difficulty.</Toast>
-              
             </div>
             <div className="flex  min-h-[40px] items-end mt-4 ">
-            <div className="w-3/4">
-                 <ProgressBar progress="60"/>
+              <div className="w-3/4">
+                <ProgressBar progress="60" />
+              </div>
             </div>
-          </div>
             <div className="w-full flex justify-end mt-5">
               <div className=" mr-5">
-              <Pagination/>
-
+                <Pagination />
               </div>
+            </div>
+            <div className="w-full flex justify-start mt-5">
+              <BreadcrumbWithIcon
+                items={[
+                  { name: "products", path: "/products" },
+                  { name: "category", path: "/categories" },
+                  { name: "product", path: "/product" },
+                ]}
+              />
             </div>
           </div>
           <div className="w-full  flex-col justify-end">
