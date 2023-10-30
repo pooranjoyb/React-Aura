@@ -1,0 +1,110 @@
+.card__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 0 5%;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  align-items: center;
+  margin: 3%;
+  border-width: 2px;
+  border-color: #d90a0a;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.5s;
+  position: relative;
+
+  /* Add these properties to create a 50/50 layout for the image and content */
+  display: flex;
+  flex-direction: column;
+}
+
+.card__image_full {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 5px;
+}
+
+.card__image {
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card__image:hover {
+  transform: scale(1.1);
+}
+
+.card__content {
+  padding: 20px;
+  width: 100%; /* Ensure content takes up 100% of the card's width */
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card__title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card__rating {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card__price {
+  font-size: 16px;
+  color: #0d0000;
+}
+
+.card__button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  outline: red auto 5px;
+  text-align: center;
+  color: "black";
+  font-size: 16px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 10px;
+  border-width: 3px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+.card__button:hover {
+  background-color: red;
+}
+
+.card__button.active {
+  background-color: red;
+}
+
+.card__text {
+  font-size: 18px;
+  color: #060000;
+  margin-bottom: 10px;
+  font: sans-serif;
+}
