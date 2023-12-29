@@ -1,11 +1,4 @@
-# Hacktoberfest 2023 : React-Aura 🚀
-
-### `STAR`⭐ The Repository `OPEN FIRST` Pull Request & `Get it Merged!` 🎉
-🗣 **Hacktoberfest encourages participation in the open source community, which grows bigger every year. Complete the challenge and earn a limited edition rewards!🚀**
-
-📢 **Register [here](https://hacktoberfest.com) for Hacktoberfest and make four pull requests (PRs) between October 1st-31st to get awesome rewards! 🔥.**
-
-<img src="./public/hacktoberfest_icon.png" alt="Hacktoberfest2023 Banner"/>
+# React-Aura :rocket:
 
 ![Hacktoberfest 2023](https://img.shields.io/badge/Hacktoberfest-2023-blueviolet.svg)
 ![Open Source](https://img.shields.io/badge/Open%20Source-Yes-brightgreen.svg)
